@@ -17,7 +17,7 @@ public class SpellChecker {
          * Distance to the input string 
          */
         ArrayList<MEDValue> arr = new ArrayList<>(ARRAY_SIZE);
-        File dict = new File("C:\\Users\\Pancho\\workspace\\Projects\\src\\dictionary.txt");
+        File dict = new File("dictionary.txt");
         String line;
         BufferedReader br = new BufferedReader(new FileReader(dict));
         MEDValue least = null;
