@@ -6,20 +6,30 @@ import java.util.List;
  * either the threshold function or the logistic function.
  */
 public interface Perceptron {
-	
-	/**
-	 * Weights the inputs and passes them through the activation function.
-	 */ 
-	public double activate(List<Double> inputs);
+    
+    /**
+     * Weights the inputs and passes them through the activation function.
+     */ 
+    public double activate(List<Double> inputs);
 
-	/**
-	 * Returns the derivative of the node's activation function.
-	 */ 
-	public double gPrime(double x);
+    /**
+     * Returns the derivative of the node's activation function.
+     */ 
+    public double gPrime(double x);
 
-	/**
-	 * Returns the Perceptron's weights.
-	 */
-	public List<Double> getWeights();
+    /**
+     * Returns the Perceptron's weights.
+     */
+    public List<Double> getWeights();
+
+    /**
+     * Sets the Perceptron's weights.
+     */ 
+    public void setWeights(List<Double> weights);
+
+    /**
+     * Returns the sum of the weights.
+     */ 
+    public double sumWeights();
 
 }
